@@ -1,0 +1,56 @@
+@font-face {
+    font-family: "Pixel NES";
+    src: url("Pixel_NES.ttf");
+}
+html{
+    font-family: 'Pixel NES', sans-serif;
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+}
+body{
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    margin: 8px;
+    padding: 20px;
+    border: solid 1px white;
+}
+#bottom-bar{
+    height: 20px;
+    width: 100px;
+    background-color: blue;
+    position: absolute;
+}
+#ball{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: yellow;
+    position: absolute;
+}
+.block{
+    box-sizing: border-box;
+    height: 20px;
+    width: 50px;
+    border: solid 1px white;
+    background-color: red;
+}
+.destroyedBlock{
+    border: none;
+    background-color: transparent;
+}
+.UI{
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    border: solid 1px #f1f1f1;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: white;
+}
+.popup{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
